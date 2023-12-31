@@ -1,0 +1,7 @@
+<div class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Введите ссылку, чтобы кнопка ввода активировалась</mat-label>
+    <input matInput [(ngModel)]="value" >
+  </mat-form-field>
+  <button [disabled]="value == '' " (click)="handleValue()" class="button_qr" mat-button color="warn">QR code</button>
+</div>
